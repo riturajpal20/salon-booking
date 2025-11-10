@@ -1,0 +1,77 @@
+.footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #374151;
+}
+
+.footer-col {
+  flex: 1 1 180px; /* slightly reduced min-width to fit 5 columns */
+  min-width: 160px;
+}
+
+.footer-col h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #0ea5e9; /* changed from blue to soft cyan */
+}
+
+
+.footer-col p {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  line-height: 1.4;
+}
+
+.footer-col a {
+  text-decoration: none;
+  color: #e5e7eb;
+  transition: color 0.2s;
+}
+
+.footer-col a:hover {
+  color: #4f46e5;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social {
+  font-size: 1.5rem;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.social.insta { color: #e1306c; }
+.social.linkedin { color: #0077b5; }
+.social.twitter { color: #1da1f2; }
+
+.social:hover { transform: scale(1.2); }
+
+/* Mail link */
+.footer-mail {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+.footer-mail:hover {
+  color: #4f46e5;
+}
+
+/* Bottom row */
+.footer-bottom {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}

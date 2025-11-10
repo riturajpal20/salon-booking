@@ -1,0 +1,186 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Login Page Container */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Login Box */
+.login-box {
+  display: flex;
+  width: 900px;
+  max-width: 100%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/* Left Panel */
+.left-panel {
+  flex: 1;
+  background-color: #fff5f0; /* light orange background */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.left-panel .brand {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ff6600; /* bright orange */
+}
+
+.left-panel .brand .highlight {
+  color: #000;
+}
+
+.left-panel p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.left-panel .illustration {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+/* Right Panel */
+.right-panel {
+  flex: 1;
+  padding: 40px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 3px solid transparent;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff6600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tabs button.active {
+  border-bottom: 3px solid #ff6600;
+  color: #000;
+}
+
+/* Forms */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #ff6600;
+  box-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
+}
+
+/* Buttons */
+.primary-btn {
+  padding: 12px 0;
+  background-color: #ff6600;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 5px;
+}
+
+.primary-btn:hover {
+  background-color: #e65c00;
+}
+
+/* OR Divider */
+.or-divider {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+}
+
+.or-divider span {
+  background: #fff;
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.or-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  z-index: 0;
+}
+
+/* Error Message */
+.error-msg {
+  color: #ff3300;
+  font-weight: 500;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-box {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    padding: 30px;
+  }
+
+  .left-panel .illustration {
+    max-width: 200px;
+  }
+}

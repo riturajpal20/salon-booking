@@ -1,0 +1,88 @@
+.payment-page {
+  background: #f2f8ff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.payment-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px 30px;
+  width: 450px;
+}
+
+.payment-title {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.payment-info p {
+  margin: 6px 0;
+}
+
+.user-details-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.user-details-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.service-selector {
+  margin-top: 20px;
+}
+
+.service-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.service-option {
+  flex: 1 1 45%;
+  background: #f0f8ff;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.service-option.selected {
+  border-color: #007bff;
+  background: #e6f0ff;
+}
+
+.price-section {
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.pay-btn {
+  width: 100%;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.pay-btn:hover {
+  background: #0056b3;
+}
